@@ -21,4 +21,6 @@ engineVerticalOffset = -20 //The x position of both engines
 
 fuelMax = 100 //Maximum amount of fuel
 fuelRateThrust = 1 //Rate at which fuel is consumed by thrusting forwards
+fuelRateTurn = 0.25 //Rate at which fuel is consumed by turning
+fuelRateBrake = 0.5 //Rate at which fuel is consumed by braking
 fuel = 100 //Initial amount of fuel
