@@ -16,7 +16,7 @@ else //If you aren't turning
             rotatespeed -= rotatefriction
 }
 if keyboard_check(vk_up) //If the up arrow is held
-    if checkFuel(){
+    if checkFuel(fuelRateThrust){ /*checkFuel now takes an argument which defines the burn rate.*/
         fireEngineParticles()
         motion_add(image_angle, accelrate) //Add the acceleration value to the ships current facing direction
         if speed > topspeed //If this acceleration puts us over the top speed for this ship, slow it down accordingly.

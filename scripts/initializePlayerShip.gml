@@ -19,6 +19,6 @@ engineLeftOffset = 15 //The y position of the left engine
 engineRightOffset = -15 //The y position of the right engine
 engineVerticalOffset = -20 //The x position of both engines
 
-fuelmax = 100 //Maximum amount of fuel
-fuelrate = 1 //Rate at which fuel is consumed
+fuelMax = 100 //Maximum amount of fuel
+fuelRateThrust = 1 //Rate at which fuel is consumed by thrusting forwards
 fuel = 100 //Initial amount of fuel
