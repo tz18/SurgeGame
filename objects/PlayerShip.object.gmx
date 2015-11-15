@@ -51,8 +51,9 @@ engineParticleSystem();
             <kind>1</kind>
             <string>//Variables are initialised in the create section
 
-checkKeys(); //Run the script that checks key input, and will rotate the ship, add speed in the facing direction, or apply friction to slow the ship down.
+checkKeys(); //Checks key input, and will rotate the ship, add speed in the facing direction, or apply friction to slow the ship down.
 rotateShip(); //Rotates the ship sprite, and adjusts the subsprite to reflect turning rate.
+stepPlayerShip(); //Adds fuel
 </string>
           </argument>
         </arguments>
@@ -76,6 +77,48 @@ rotateShip(); //Rotates the ship sprite, and adjusts the subsprite to reflect tu
           <argument>
             <kind>4</kind>
             <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>drawPlayerShipGUI</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

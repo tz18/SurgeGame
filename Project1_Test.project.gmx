@@ -21,6 +21,8 @@
       <script>scripts\engineParticleSystem.gml</script>
       <script>scripts\burnFuel.gml</script>
       <script>scripts\fireEngineParticles.gml</script>
+      <script>scripts\stepPlayerShip.gml</script>
+      <script>scripts\drawPlayerShipGUI.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

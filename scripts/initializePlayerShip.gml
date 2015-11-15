@@ -19,8 +19,11 @@ engineLeftOffset = 15 //The y position of the left engine
 engineRightOffset = -15 //The y position of the right engine
 engineVerticalOffset = -20 //The x position of both engines
 
+fuel = 100 //Initial amount of fuel
 fuelMax = 100 //Maximum amount of fuel
 fuelRateThrust = 1 //Rate at which fuel is consumed by thrusting forwards
 fuelRateTurn = 0.25 //Rate at which fuel is consumed by turning
 fuelRateBrake = 0.5 //Rate at which fuel is consumed by braking
-fuel = 100 //Initial amount of fuel
+fuelRegenRate = 0.25 //Rate at which fuel is regenerated per tick
+fuelRegenCellSize = 5 //Fuel will be regenerated in chunks this size
+fuelRegenCell = 0 //Initial amount of pending regenerated fuel
