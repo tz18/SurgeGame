@@ -19,7 +19,7 @@
       <script>scripts\rotateShip.gml</script>
       <script>scripts\initializePlayerShip.gml</script>
       <script>scripts\engineParticleSystem.gml</script>
-      <script>scripts\checkFuel.gml</script>
+      <script>scripts\burnFuel.gml</script>
       <script>scripts\fireEngineParticles.gml</script>
     </scripts>
   </scripts>
