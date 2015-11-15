@@ -1,5 +1,7 @@
 //Defining variables used in the player ship's step code segments
 
+checkpointNumber = 0; //The player will start with the first checkpoint.
+
 image_angle = 90 //Default to facing up
 image_speed = 0 //Stop autoanimation
 image_index = 2 //Default to the neutral sprite

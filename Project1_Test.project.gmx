@@ -10,6 +10,10 @@
       <sprite>sprites\PlayerShipSprite</sprite>
     </sprites>
     <sprite>sprites\THEFUCKINGSUNSPRITE</sprite>
+    <sprites name="Checkpoints">
+      <sprite>sprites\CheckpointSprite</sprite>
+      <sprite>sprites\CheckpointSpriteB</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,6 +28,10 @@
       <script>scripts\stepPlayerShip.gml</script>
       <script>scripts\drawPlayerShipGUI.gml</script>
     </scripts>
+    <scripts name="Checkpoint">
+      <script>scripts\initialiseCheckpoint.gml</script>
+      <script>scripts\checkpointDraw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="PlayerShip">
@@ -31,6 +39,10 @@
     </objects>
     <objects name="THEFUCKINGSUN">
       <object>objects\THEFUCKINGSUN</object>
+    </objects>
+    <objects name="Checkpoints">
+      <object>objects\Checkpoint</object>
+      <object>objects\CheckpointB</object>
     </objects>
   </objects>
   <rooms name="rooms">
