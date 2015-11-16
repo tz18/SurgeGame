@@ -32,6 +32,10 @@
       <script>scripts\initialiseCheckpoint.gml</script>
       <script>scripts\checkpointDraw.gml</script>
     </scripts>
+    <scripts name="Camera">
+      <script>scripts\followTarget.gml</script>
+      <script>scripts\initializeCamera.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="PlayerShip">
@@ -43,6 +47,9 @@
     <objects name="Checkpoints">
       <object>objects\Checkpoint</object>
       <object>objects\CheckpointB</object>
+    </objects>
+    <objects name="Camera">
+      <object>objects\Camera</object>
     </objects>
   </objects>
   <rooms name="rooms">
