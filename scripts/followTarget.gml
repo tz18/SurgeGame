@@ -11,8 +11,10 @@ if not instance_exists(target){ //If the target gets removed, stop following it
 
 speedcap=400
 accelerationfactor=900
-    
-var temp_x,temp_y; temp_x=target.x-x temp_y=target.y-y //Get distance vector to the target
+
+var temp_x,temp_y;
+temp_x=circularDistance(x,target.x,room_width)//Get distance vector to the target
+temp_y=circularDistance(y,target.y,room_height)//even if over a wrap seam
 if abs(temp_x)>speedcap temp_x=speedcap*sign(temp_x) //Distances to the target greater than the speedcap will not make the camera move faster
 if abs(temp_y)>speedcap temp_y=speedcap*sign(temp_y) //effectively setting its max speed
 hspeed+=sqrt(abs(temp_x/accelerationfactor))*temp_x //if the target is close, the camera moves slowly

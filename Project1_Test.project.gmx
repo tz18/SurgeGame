@@ -33,8 +33,10 @@
       <script>scripts\checkpointDraw.gml</script>
     </scripts>
     <scripts name="Camera">
+      <script>scripts\circularDistance.gml</script>
       <script>scripts\followTarget.gml</script>
       <script>scripts\initializeCamera.gml</script>
+      <script>scripts\moduloButBetter.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
