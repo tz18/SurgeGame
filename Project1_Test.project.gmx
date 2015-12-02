@@ -34,9 +34,13 @@
     </scripts>
     <scripts name="Camera">
       <script>scripts\circularDistance.gml</script>
+      <script>scripts\handleViews.gml</script>
       <script>scripts\followTarget.gml</script>
       <script>scripts\initializeCamera.gml</script>
       <script>scripts\moduloButBetter.gml</script>
+    </scripts>
+    <scripts name="Utility">
+      <script>scripts\drawDoppelganger.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
