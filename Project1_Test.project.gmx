@@ -37,10 +37,12 @@
       <script>scripts\handleViews.gml</script>
       <script>scripts\followTarget.gml</script>
       <script>scripts\initializeCamera.gml</script>
-      <script>scripts\moduloButBetter.gml</script>
+      <script>scripts\cameraWrap.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\drawDoppelganger.gml</script>
+      <script>scripts\moduloButBetter.gml</script>
+      <script>scripts\wrapBetter.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

@@ -1,5 +1,10 @@
-target=instance_nearest(x, y, PlayerShip)
+target=instance_nearest(x, y, PlayerShip) //camera follows the player ship nearest it at initialization
 windowmapw=2048 //width and height of the window in terms of 
 windowmaph=1500 //how many map pixels it displays
 windowscreenw=1024 //width and height of the window in terms of
 windowscreenh=768 //how much of the OS screen it takes up
+cameraview=0 //the camera is in view 0 at the start
+view_hborder[0] = windowmapw; //when following the camera, follow it exactly
+view_vborder[0] = windowmaph;
+view_hborder[1] = windowmapw;
+view_vborder[1] = windowmaph;
