@@ -38,6 +38,7 @@
       <script>scripts\followTarget.gml</script>
       <script>scripts\initializeCamera.gml</script>
       <script>scripts\cameraWrap.gml</script>
+      <script>scripts\drawMapBorder.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\drawDoppelganger.gml</script>

@@ -35,8 +35,7 @@ else if ((x - (windowmapw/2)) < 0){ //if the left edge of the window is past the
     
     view_visible[otherview]=true
 }
-else {  //if we're not straddling a seam don't show the other view
-    view_visible[otherview]=false  
+else {  //if we're not straddling a seam don't show the other view  
     view_wview[cameraview]=windowmapw
     view_wport[cameraview]=windowscreenw
 }

@@ -14,7 +14,7 @@ rotatespeedmax = 8*1.25 //How fast can it turn at its maximum rate
 
 
 accelrate = 1 //How fast does it accelerate forwards
-topspeed = 15 //How fast do we want this thing to go
+topspeed = 40 //How fast do we want this thing to go
 brakes = 0.5 //Friction rate when holding the down button
 
 engineLeftOffset = 15 //The y position of the left engine
