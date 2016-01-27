@@ -50,7 +50,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>followTarget</script>
+            <script>handleViews</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -91,6 +91,8 @@
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>601</id>
@@ -107,7 +109,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>handleViews</script>
+            <script>followTarget</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -190,6 +192,7 @@
           <argument>
             <kind>1</kind>
             <string>draw_text(20,20,"cameraview: "+string(cameraview))
+draw_line((windowscreenw/2),0,(windowscreenw/2),room_height)
 </string>
           </argument>
         </arguments>
