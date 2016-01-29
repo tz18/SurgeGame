@@ -2,7 +2,7 @@
 <object>
   <spriteName>CheckpointSprite</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>self</parentName>
@@ -191,8 +191,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(20,20,"cameraview: "+string(cameraview))
-draw_line((windowscreenw/2),0,(windowscreenw/2),room_height)
+            <string>//draw_text(20,20,"cameraview: "+string(cameraview))
+//draw_line((windowscreenw/2),0,(windowscreenw/2),room_height)
 </string>
           </argument>
         </arguments>
