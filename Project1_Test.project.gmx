@@ -14,6 +14,12 @@
       <sprite>sprites\CheckpointSprite</sprite>
       <sprite>sprites\CheckpointSpriteB</sprite>
     </sprites>
+    <sprites name="MainMenuButtons">
+      <sprite>sprites\SelectRaceButtonSprite</sprite>
+      <sprite>sprites\OptionsButtonSprite</sprite>
+      <sprite>sprites\ExitButtonSprite</sprite>
+      <sprite>sprites\BackButtonSprite</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -45,6 +51,7 @@
       <script>scripts\moduloButBetter.gml</script>
       <script>scripts\wrapBetter.gml</script>
     </scripts>
+    <script>scripts\MouseHover.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="PlayerShip">
@@ -60,9 +67,17 @@
     <objects name="Camera">
       <object>objects\Camera</object>
     </objects>
+    <objects name="MainMenuButtons">
+      <object>objects\SelectRaceObject</object>
+      <object>objects\OptionsObject</object>
+      <object>objects\ExitObject</object>
+      <object>objects\BackObject</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MainMenuRoom</room>
     <room>rooms\room1</room>
+    <room>rooms\OptionsRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
