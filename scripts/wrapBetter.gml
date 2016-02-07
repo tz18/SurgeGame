@@ -5,8 +5,8 @@ if x>room_width{
     x=(x-room_width)
 }
 if y<0{
-y=room_height
+    y=(room_height+y)
 }
 if y>room_height{
-    y=0
+    y=(x-room_height)
 }

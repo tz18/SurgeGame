@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>room1</room>
+            <room>RaceSelectRoom</room>
           </argument>
         </arguments>
       </action>
