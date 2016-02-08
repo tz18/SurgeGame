@@ -13,11 +13,6 @@ view_wview[leftview]=windowmapw-view_wview[rightview]  //our old view takes up t
 view_wport[leftview]=view_xport[rightview] //old viewport shrinks to where the new viewport starts
 view_xport[leftview]=0    //this is the left viewport in the window
 
-//if false and ((y + (windowmaph/2)) > room_height){   
-//}
-//else if false and ((y - (windowmaph/2)) < 0){
-//}
-//else{
 view_hview[rightview]=windowmaph
 view_yview[rightview]=max(min((y-(windowmaph/2)),(room_height-windowmaph)),0) //temporary until y dimension coded
 view_hport[rightview]=windowscreenh
@@ -26,5 +21,4 @@ view_yport[rightview]=0
 view_hview[leftview]=windowmaph
 view_yview[leftview]=max(min((y-(windowmaph/2)),(room_height-windowmaph)),0)
 view_hport[leftview]=windowscreenh
-view_yport[leftview]=0        
-//}
+view_yport[leftview]=0

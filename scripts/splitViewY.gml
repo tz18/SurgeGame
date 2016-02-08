@@ -1,4 +1,4 @@
-///splitView(cameray,topview,bottomview)
+///splitViewY(cameray,topview,bottomview)
 //cameray should be given in the range room_height-(windowmaph/2) < cameray < room_height+(windowmaph/2), i.e. not wrapped at 0, 
 //i.e. if the camera is below the map seam cameray should be = y+room_height
                          

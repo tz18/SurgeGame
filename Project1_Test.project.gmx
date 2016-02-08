@@ -43,6 +43,7 @@
       <script>scripts\circularDistance.gml</script>
       <script>scripts\splitViewX.gml</script>
       <script>scripts\splitViewY.gml</script>
+      <script>scripts\splitViewBoth.gml</script>
       <script>scripts\handleViews.gml</script>
       <script>scripts\followTarget.gml</script>
       <script>scripts\initializeCamera.gml</script>

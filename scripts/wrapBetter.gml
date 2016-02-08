@@ -8,5 +8,5 @@ if y<0{
     y=(room_height+y)
 }
 if y>room_height{
-    y=(x-room_height)
+    y=(y-room_height)
 }
