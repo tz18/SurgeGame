@@ -9,11 +9,11 @@ image_index = 2 //Default to the neutral sprite
 
 rotatespeed = 0 //Initializing a variable
 rotatefriction = 0.4*2 //How much friction to apply when not holding keys
-rotaterate = 0.85*1.25 //How fast does it start turning
-rotatespeedmax = 8*1.25 //How fast can it turn at its maximum rate
+rotaterate = 0.9*1.25 //How fast does it start turning
+rotatespeedmax = 8*1.3 //How fast can it turn at its maximum rate
 
 
-accelrate = 1 //How fast does it accelerate forwards
+accelrate = 1.5 //How fast does it accelerate forwards
 topspeed = 1000 //How fast do we want this thing to go
 brakes = 0.5 //Friction rate when holding the down button
 
@@ -29,3 +29,8 @@ fuelRateBrake = 0.5 //Rate at which fuel is consumed by braking
 fuelRegenRate = 0.35 //Rate at which fuel is regenerated per tick
 fuelRegenCellSize = 5 //Fuel will be regenerated in chunks this size
 fuelRegenCell = 0 //Initial amount of pending regenerated fuel
+
+pastlaptimes=ds_list_create()
+bestlaptime=0
+lastlaptime=0
+laptime=0

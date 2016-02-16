@@ -5,3 +5,4 @@ if self.fuel < self.fuelMax{
         self.fuelRegenCell -= self.fuelRegenCellSize
     }
 }
+laptime=laptime+delta_time/1000000
