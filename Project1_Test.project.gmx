@@ -11,8 +11,8 @@
     </sprites>
     <sprite>sprites\THEFUCKINGSUNSPRITE</sprite>
     <sprites name="Checkpoints">
-      <sprite>sprites\CheckpointSprite</sprite>
       <sprite>sprites\CheckpointSpriteB</sprite>
+      <sprite>sprites\CheckpointSprite</sprite>
     </sprites>
     <sprites name="MainMenuButtons">
       <sprite>sprites\SelectRaceButtonSprite</sprite>
@@ -21,19 +21,29 @@
       <sprite>sprites\BackButtonSprite</sprite>
       <sprite>sprites\RaceButtonSprite</sprite>
     </sprites>
+    <sprites name="Barriers">
+      <sprite>sprites\BarrierSpriteA</sprite>
+      <sprite>sprites\BarrierSpriteB</sprite>
+      <sprite>sprites\BarrierSpriteC</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="PlayerShip">
-      <script>scripts\checkKeys.gml</script>
+    <scripts name="Ship">
       <script>scripts\rotateShip.gml</script>
-      <script>scripts\initializePlayerShip.gml</script>
+      <script>scripts\initializeShip.gml</script>
       <script>scripts\engineParticleSystem.gml</script>
       <script>scripts\burnFuel.gml</script>
       <script>scripts\fireEngineParticles.gml</script>
-      <script>scripts\stepPlayerShip.gml</script>
-      <script>scripts\drawPlayerShipGUI.gml</script>
+      <script>scripts\stepShip.gml</script>
+      <script>scripts\shipAcceleration.gml</script>
+      <scripts name="PlayerShip">
+        <script>scripts\initializePlayerShip.gml</script>
+        <script>scripts\stepPlayerShip.gml</script>
+        <script>scripts\drawPlayerShipGUI.gml</script>
+        <script>scripts\checkKeys.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Checkpoint">
       <script>scripts\initialiseCheckpoint.gml</script>
@@ -63,11 +73,13 @@
     <scripts name="Course">
       <script>scripts\initializeCourse.gml</script>
     </scripts>
+    <scripts name="Barriers">
+      <script>scripts\initializeBarrierA.gml</script>
+      <script>scripts\barrierRegister.gml</script>
+      <script>scripts\barrierDraw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <objects name="PlayerShip">
-      <object>objects\PlayerShip</object>
-    </objects>
     <objects name="THEFUCKINGSUN">
       <object>objects\THEFUCKINGSUN</object>
     </objects>
@@ -84,6 +96,16 @@
       <object>objects\ExitObject</object>
       <object>objects\BackObject</object>
       <object>objects\RaceMenuOptionObject</object>
+    </objects>
+    <objects name="Barrier">
+      <object>objects\BarrierA</object>
+      <object>objects\BarrierB</object>
+    </objects>
+    <objects name="Ship">
+      <objects name="PlayerShip">
+        <object>objects\PlayerShip</object>
+      </objects>
+      <object>objects\Ship</object>
     </objects>
   </objects>
   <rooms name="rooms">

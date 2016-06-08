@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>Ship</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>initializePlayerShip();
-engineParticleSystem();
+            <string>event_inherited();
+initializePlayerShip();
 </string>
           </argument>
         </arguments>
@@ -50,11 +50,13 @@ engineParticleSystem();
           <argument>
             <kind>1</kind>
             <string>//Variables are initialised in the create section
+//PlayerShips use checkKeys(), AI ships will use sth else
 
 checkKeys(); //Checks key input, and will rotate the ship, add speed in the facing direction, or apply friction to slow the ship down.
-rotateShip(); //Rotates the ship sprite, and adjusts the subsprite to reflect turning rate.
-stepPlayerShip(); //Adds fuel
-wrapBetter(); //Wraps position horizontally
+event_inherited(); //i'm iffy on using event_inherited and not specifically calling the parent scripts
+                    //because what if we want to override one of the parent's functions and handle it differently?
+                    //maybe that means that function shouldn't be in the parent but should be delegated to the children
+stepPlayerShip();
 </string>
           </argument>
         </arguments>
@@ -78,48 +80,6 @@ wrapBetter(); //Wraps position horizontally
           <argument>
             <kind>9</kind>
             <script>drawPlayerShipGUI</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>drawDoppelganger</script>
           </argument>
           <argument>
             <kind>0</kind>

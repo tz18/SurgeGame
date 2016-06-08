@@ -18,4 +18,5 @@ if ship != noone //If yes..
             Checkpoint.lineColor = c_white //Turn all checkpoints white again
             }
         else ship.checkpointNumber += 1; //Otherwise, onto the next checkpoint.
+        ship.fuel = min(ship.fuelMax,ship.fuel+ship.fuelRegenCellSize)
     }
