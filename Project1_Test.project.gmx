@@ -44,6 +44,11 @@
         <script>scripts\drawPlayerShipGUI.gml</script>
         <script>scripts\checkKeys.gml</script>
       </scripts>
+      <scripts name="ShipLoadout">
+        <script>scripts\initializeShipLoadout.gml</script>
+        <script>scripts\createBasicLoadout.gml</script>
+        <script>scripts\createSuperLoadout.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Checkpoint">
       <script>scripts\initialiseCheckpoint.gml</script>

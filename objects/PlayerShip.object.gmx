@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 initializePlayerShip();
+initializeShipLoadout(createSuperLoadout())
 </string>
           </argument>
         </arguments>
