@@ -31,19 +31,20 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Ship">
-      <script>scripts\rotateShip.gml</script>
-      <script>scripts\initializeShip.gml</script>
-      <script>scripts\engineParticleSystem.gml</script>
       <script>scripts\burnFuel.gml</script>
+      <script>scripts\engineParticleSystem.gml</script>
       <script>scripts\fireEngineParticles.gml</script>
-      <script>scripts\stepShip.gml</script>
-      <script>scripts\shipAcceleration.gml</script>
+      <script>scripts\gravityStep.gml</script>
+      <script>scripts\initializeShip.gml</script>
       <scripts name="PlayerShip">
         <script>scripts\initializePlayerShip.gml</script>
         <script>scripts\stepPlayerShip.gml</script>
         <script>scripts\drawPlayerShipGUI.gml</script>
         <script>scripts\checkKeys.gml</script>
       </scripts>
+      <script>scripts\rotateShip.gml</script>
+      <script>scripts\shipAcceleration.gml</script>
+      <script>scripts\stepShip.gml</script>
     </scripts>
     <scripts name="Checkpoint">
       <script>scripts\initialiseCheckpoint.gml</script>

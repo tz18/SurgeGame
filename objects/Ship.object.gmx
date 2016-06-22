@@ -54,7 +54,9 @@ engineParticleSystem();
 
 rotateShip(); //Rotates the ship sprite, and adjusts the subsprite to reflect turning rate.
 stepShip(); //Adds fuel
+gravityStep(); //Updates gravity
 wrapBetter(); //Wraps position horizontally
+
 </string>
           </argument>
         </arguments>
