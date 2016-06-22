@@ -35,6 +35,7 @@
       <script>scripts\engineParticleSystem.gml</script>
       <script>scripts\fireEngineParticles.gml</script>
       <script>scripts\gravityStep.gml</script>
+      <script>scripts\totalMass.gml</script>
       <script>scripts\initializeShip.gml</script>
       <scripts name="PlayerShip">
         <script>scripts\initializePlayerShip.gml</script>
@@ -53,7 +54,6 @@
       <script>scripts\checkpointCollision.gml</script>
     </scripts>
     <scripts name="Camera">
-      <script>scripts\circularDistance.gml</script>
       <script>scripts\splitViewX.gml</script>
       <script>scripts\splitViewY.gml</script>
       <script>scripts\splitViewBoth.gml</script>
@@ -61,12 +61,16 @@
       <script>scripts\followTarget.gml</script>
       <script>scripts\initializeCamera.gml</script>
       <script>scripts\cameraWrap.gml</script>
-      <script>scripts\drawMapBorder.gml</script>
+      <script>scripts\script33.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\drawDoppelganger.gml</script>
+      <script>scripts\drawMapBorder.gml</script>
       <script>scripts\moduloButBetter.gml</script>
       <script>scripts\wrapBetter.gml</script>
+      <script>scripts\circularDistance.gml</script>
+      <script>scripts\torusDirection.gml</script>
+      <script>scripts\torusDistance.gml</script>
     </scripts>
     <scripts name="MainMenuButtons">
       <script>scripts\MouseHover.gml</script>

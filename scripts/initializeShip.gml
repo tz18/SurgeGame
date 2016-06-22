@@ -51,4 +51,4 @@ fuelRegenRate = 0.20 //Rate at which fuel is regenerated per tick
 fuelRegenCellSize = 5 //Fuel will be regenerated in chunks this size
 fuelRegenCell = 0 //Initial amount of pending regenerated fuel
 
-gravityFactor = 10000 //Gravity strength for the ship is calculated by dividing the distance to gravity source by this number. Should change based on mass.
+

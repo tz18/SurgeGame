@@ -3,5 +3,8 @@
 
 //TODO: Make the target object an argument. May also be worth making gravity sources as their own thing, with an optional sprite.
 
-gravity = (point_distance(self.x,self.y,instance_nearest(self.x,self.y,THEFUCKINGSUN).x,instance_nearest(self.x,self.y,THEFUCKINGSUN).y)/gravityFactor)
-gravity_direction = point_direction(self.x,self.y,instance_nearest(self.x,self.y,THEFUCKINGSUN).x,instance_nearest(self.x,self.y,THEFUCKINGSUN).y)
+gravityFactor = .0000001 //lets make everything complicated
+thesun=instance_nearest(self.x,self.y,THEFUCKINGSUN)
+distance = torusDistance(self.x,self.y,thesun.x,thesun.y)
+gravity = (gravityFactor*(((self.mass+self.fuel)*THEFUCKINGSUN.mass)/(distance^2))) //newton's equations or sth
+gravity_direction = torusDirection(self.x,self.y,thesun.x,thesun.y)
