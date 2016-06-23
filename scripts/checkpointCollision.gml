@@ -1,6 +1,13 @@
 //Game logic should go in the step event right?
+if (instance_exists(global.playerShipID) and global.playerShipID.checkpointNumber == checkpointNumber) //Checks that there's a ship (so the game doesn't brick if for some reason there isn't), and then checks what the current checkpoint number is.
+    {
+        if finishLine == true //If this is the last checkpoint
+            lineColor = c_fuchsia //Look differently
+        else
+            lineColor = c_blue //But either way we're showing that this is the line to shoot for.
+    }
 ship = collision_line(x, y, point2.x, point2.y,PlayerShip,false,true); //Is the player ship between the red dot and the nearest blue dot?
-if ship != noone //If yes..
+if ship == global.playerShipID //If yes..
     if (ship.checkpointNumber = checkpointNumber) //Check to see if the ship is at the right checkpoint
     {
         lineColor = c_green  //If it is, turn green.
