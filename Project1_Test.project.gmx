@@ -71,6 +71,7 @@
       <script>scripts\circularDistance.gml</script>
       <script>scripts\torusDirection.gml</script>
       <script>scripts\torusDistance.gml</script>
+      <script>scripts\newtonGravity.gml</script>
     </scripts>
     <scripts name="MainMenuButtons">
       <script>scripts\MouseHover.gml</script>
