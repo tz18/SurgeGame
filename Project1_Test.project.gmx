@@ -102,6 +102,10 @@
       <object>objects\ExitObject</object>
       <object>objects\BackObject</object>
       <object>objects\RaceMenuOptionObject</object>
+      <objects name="RaceMenuOptions">
+        <object>objects\Room2Select</object>
+        <object>objects\Room4Select</object>
+      </objects>
     </objects>
     <objects name="Barrier">
       <object>objects\BarrierA</object>
@@ -117,6 +121,7 @@
   <rooms name="rooms">
     <room>rooms\MainMenuRoom</room>
     <room>rooms\room2</room>
+    <room>rooms\room4</room>
     <room>rooms\OptionsRoom</room>
     <room>rooms\RaceSelectRoom</room>
   </rooms>
