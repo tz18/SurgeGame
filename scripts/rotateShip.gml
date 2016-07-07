@@ -1,6 +1,4 @@
-var rotaterate=shipAcceleration(fuelBurnRateTurn,exhaustVelocityTurn)
-
-if ((rotatespeed > 0 && rotatespeed < rotaterate) || (rotatespeed < 0 && rotatespeed > rotaterate))
+if (((rotatespeed >= 0) && (rotatespeed < rotaterate)) || ((rotatespeed <= 0) && (rotatespeed > -rotaterate)))
     rotatespeed = 0 //Helps the ship come to rest and stop rotating. Without this, it will maintain a tiny bit of rotation.
     
 if rotatespeed == rotatespeedmax //If we've maxed out how fast we can turn to the right, use the far right sprite
