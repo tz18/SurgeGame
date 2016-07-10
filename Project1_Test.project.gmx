@@ -84,6 +84,7 @@
       <script>scripts\barrierRegister.gml</script>
       <script>scripts\barrierDraw.gml</script>
     </scripts>
+    <script>scripts\load_ini.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="THEFUCKINGSUN">

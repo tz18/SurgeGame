@@ -1,5 +1,5 @@
 rotaterate=shipAcceleration(fuelBurnRateTurn,exhaustVelocityTurn) //this is used in rotateShip to stop the ship drifting
-if keyboard_check(vk_left) //If the left arrow key is held
+if keyboard_check(global.leftKey) //If the left arrow key is held
     {
         if burnFuel(fuelBurnRateTurn)
             {
@@ -8,7 +8,7 @@ if keyboard_check(vk_left) //If the left arrow key is held
                 else rotatespeed = -rotatespeedmax //Otherwise, we just make sure its going at the maximum speed left
             }
     }
-if keyboard_check(vk_right) //Checks that the right arrow key is held.
+if keyboard_check(global.rightKey) //Checks that the right arrow key is held.
     {
         if burnFuel(fuelBurnRateTurn)
             {
@@ -17,7 +17,7 @@ if keyboard_check(vk_right) //Checks that the right arrow key is held.
                 else rotatespeed = rotatespeedmax
             }
     }
-if not((keyboard_check(vk_right) or keyboard_check(vk_left))) //If you aren't turning
+if not((keyboard_check(global.rightKey) or keyboard_check(global.leftKey))) //If you aren't turning
     {
         if rotatespeed != 0 //Check to see if we're not still turning
             {
@@ -27,7 +27,7 @@ if not((keyboard_check(vk_right) or keyboard_check(vk_left))) //If you aren't tu
                     rotatespeed -= rotatefriction
             }
     }
-if keyboard_check(vk_up) //If the up arrow is held
+if keyboard_check(global.upKey) //If the up arrow is held
     {
         if burnFuel(fuelBurnRateMain)
             { /*checkFuel now takes an argument which defines the burn rate.*/
@@ -37,7 +37,7 @@ if keyboard_check(vk_up) //If the up arrow is held
                     speed = topspeed //This ensures we can still change direction if we're at top speed, and being at top speed won't lock future vector changes out
             }
     }
-if keyboard_check (vk_down) //If the down key is held
+if keyboard_check (global.downKey) //If the down key is held
     {
         if (speed > 0)
             if burnFuel(fuelBurnRateBrake)
