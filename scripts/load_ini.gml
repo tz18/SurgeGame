@@ -1,5 +1,5 @@
-INI_FILE = "SURGE.ini"
-INI_CONTROLS = "controls"
+INI_FILE = 'SURGE.ini' //Define block for the operations below.
+INI_CONTROLS = 'controls' //Remember kids, always feed a string to the first two arguments in the read/write functions, which demand strings.
 
 INI_UPKEY = 'upKey'
 INI_DOWNKEY = 'downKey'
