@@ -20,6 +20,7 @@
       <sprite>sprites\ExitButtonSprite</sprite>
       <sprite>sprites\BackButtonSprite</sprite>
       <sprite>sprites\RaceButtonSprite</sprite>
+      <sprite>sprites\ConfigButtonSprite</sprite>
     </sprites>
     <sprites name="Barriers">
       <sprite>sprites\BarrierSpriteA</sprite>
@@ -86,6 +87,7 @@
     </scripts>
     <scripts name="Config">
       <script>scripts\load_ini.gml</script>
+      <script>scripts\getChar.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -109,6 +111,7 @@
         <object>objects\Room2Select</object>
         <object>objects\Room4Select</object>
       </objects>
+      <object>objects\ConfigButton</object>
     </objects>
     <objects name="Barrier">
       <object>objects\BarrierA</object>
