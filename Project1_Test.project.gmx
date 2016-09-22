@@ -82,8 +82,11 @@
     </scripts>
     <scripts name="Barriers">
       <script>scripts\initializeBarrierA.gml</script>
-      <script>scripts\barrierRegister.gml</script>
+      <script>scripts\barrierARegister.gml</script>
+      <script>scripts\barrierBRegister.gml</script>
       <script>scripts\barrierDraw.gml</script>
+      <script>scripts\barrierCollision.gml</script>
+      <script>scripts\barrierBounce.gml</script>
     </scripts>
     <scripts name="Config">
       <script>scripts\load_ini.gml</script>
