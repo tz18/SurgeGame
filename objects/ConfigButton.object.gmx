@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>draw_sprite(ConfigButtonSprite,0,self.x,self.y)
-draw_set_color(c_white)
+if (point_distance(self.x,self.y,mouse_x,mouse_y) &lt; 16)
+    draw_set_color(c_green)
+else
+    draw_set_color(c_white)
 draw_text(self.x + 20,self.y,getChar(global.rightKey))
 </string>
           </argument>
